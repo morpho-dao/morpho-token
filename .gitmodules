@@ -1,0 +1,3 @@
+[submodule "lib/mangrovedao/semitransferable-token"]
+	path = lib/mangrovedao/semitransferable-token
+	url = git@github.com:mangrovedao/semitransferable-token.git
