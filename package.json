@@ -1,0 +1,27 @@
+{
+  "name": "morpho-token",
+  "version": "1.0.0",
+  "description": "Morpho token's contracts",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "forge test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morpho-labs/morpho-token.git"
+  },
+  "keywords": [
+    "defi",
+    "token",
+    "morpho"
+  ],
+  "author": "Merlin Egalite",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/morpho-labs/morpho-token/issues"
+  },
+  "homepage": "https://github.com/morpho-labs/morpho-token#readme"
+}
