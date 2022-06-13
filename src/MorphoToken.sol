@@ -9,7 +9,7 @@ import "@mangrovedao/semitransferable-token/Token.sol";
 /// @notice Morpho's token contract.
 contract MorphoToken is Token {
 
-  /// @notice Constructs Morpho's token contract.
-  /// @param _owner The address of the owner (Morpho DAO).
-  constructor(address _owner) Token("Morpho Token", "MORPHO", 18, _owner) {}
+    /// @notice Constructs Morpho's token contract.
+    /// @param _owner The address of the owner (Morpho DAO).
+    constructor(address _owner) Token("Morpho Token", "MORPHO", 18, _owner) {}
 }

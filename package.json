@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "forge test",
-    "fix:sol": "prettier --write './src/**/*.sol'"
+    "fix:sol": "prettier --write './src/**/*.sol' && prettier --write './test/**/*.sol'"
   },
   "repository": {
     "type": "git",
@@ -35,7 +35,7 @@
         "files": "*.sol",
         "options": {
           "printWidth": 80,
-          "tabWidth": 2,
+          "tabWidth": 4,
           "useTabs": false,
           "singleQuote": false,
           "bracketSpacing": false,
