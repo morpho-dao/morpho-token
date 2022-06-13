@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GNU AGPLv3
 pragma solidity ^0.8.13;
 
-import "lib/mangrovedao/semitransferable-token/src/Token.sol";
+import "@mangrovedao/semitransferable-token/Token.sol";
 
 /// @title MorphoToken.
 /// @author Morpho Association.
