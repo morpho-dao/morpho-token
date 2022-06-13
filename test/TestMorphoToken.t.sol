@@ -42,16 +42,16 @@ contract TestMorphoToken is Test {
         owner.mint($owner, TOTAL_SUPPLY);
     }
 
-    // At any step, holders can burn their own tokens.
+    // At any stage, holders can burn their own tokens.
     function testBurnTokens(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
         owner.transfer($this, _amount);
 
         morphoToken.burn(_amount / 2);
-        assertEq(morphoToken.balanceOf($this), _amount / 2 + _amount%2);
+        assertEq(morphoToken.balanceOf($this), _amount / 2 + (_amount % 2));
     }
 
-    // At step 1, morpho token will ne be non transferable.
+    // At stage 1, morpho token will ne be non transferable.
     function testNonTransferable(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
         // vm.assume(_amount > 1);
@@ -66,7 +66,7 @@ contract TestMorphoToken is Test {
         morphoToken.transferFrom($this, address(0), _amount);
     }
 
-    // At step 2, only some contracts will be allowed to transfer tokens (eg. IncentivesVault, RewardsDistributor, etc.).
+    // At stage 2, only some contracts will be allowed to transfer tokens (eg. IncentivesVault, RewardsDistributor, etc.).
     function testWhitelisting(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
         owner.transfer($this, _amount);
@@ -78,10 +78,10 @@ contract TestMorphoToken is Test {
 
         morphoToken.approve($owner, type(uint256).max);
         owner.transferFrom($this, $owner, _amount / 2);
-        assertEq(morphoToken.balanceOf($owner), TOTAL_SUPPLY - _amount % 2);
+        assertEq(morphoToken.balanceOf($owner), TOTAL_SUPPLY - (_amount % 2));
     }
 
-    // At step 3 (final step), the morpho token will be fully transferable.
+    // At stage 3 (final step), the morpho token will be fully transferable.
     function testFullyTransferable(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
         owner.transfer($this, _amount);
@@ -95,10 +95,10 @@ contract TestMorphoToken is Test {
         morphoToken.approve(address(0), type(uint256).max);
         vm.prank(address(0));
         morphoToken.transferFrom($this, $owner, _amount / 2);
-        assertEq(morphoToken.balanceOf($owner), TOTAL_SUPPLY - _amount % 2);
+        assertEq(morphoToken.balanceOf($owner), TOTAL_SUPPLY - (_amount % 2));
     }
 
-    // Perhaps at last step, the owner is removed.
+    // Perhaps at last stage, the owner is removed.
     function testRemoveOwner(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
 
