@@ -1,6 +1,6 @@
 # Morpho Token
 
-Morpho's token contract based on the [semitransferable token](https://github.com/mangrovedao/semitransferable-token) build by Mangrove DAO. Please, refer to this documentation to learn more about the functionalities of this token.
+Morpho token contract based on the [semitransferable token](https://github.com/mangrovedao/semitransferable-token) build by Mangrove DAO. Please, refer to the later repository to learn more about the functionalities of the semitransferable token.
 
 ## Morpho token's life stages
 

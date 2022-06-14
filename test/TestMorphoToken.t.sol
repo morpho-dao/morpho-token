@@ -6,7 +6,7 @@ import "./helpers/Owner.sol";
 import "forge-std/Test.sol";
 import "forge-std/console2.sol";
 
-/// @dev Simple test suite for Morpho's token scenarios.
+/// @dev Simple test suite for Morpho token scenarios.
 /// @dev For in depth tests, directly check Solmate and Semitransferable Token repositories.
 contract TestMorphoToken is Test {
     MorphoToken public morphoToken;
