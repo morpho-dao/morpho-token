@@ -37,9 +37,11 @@ contract TestMorphoToken is Test {
             true
         );
         owner.setRoleCapability(MINT_ROLE, Token.mint.selector, true);
+    }
 
-        // Mint 1B Morpho tokens to Morpho DAO.
-        owner.mint($owner, TOTAL_SUPPLY);
+    function testDeployment() public {
+        assertEq(morphoToken.totalSupply(), TOTAL_SUPPLY);
+        assertEq(morphoToken.owner(), $owner);
     }
 
     // At any stage, holders can burn their own tokens.
