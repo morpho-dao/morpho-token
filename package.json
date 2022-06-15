@@ -1,7 +1,7 @@
 {
   "name": "morpho-token",
   "version": "1.0.0",
-  "description": "Morpho token's contracts",
+  "description": "Morpho token contracts",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/morpho-labs/morpho-token.git"
+    "url": "git+https://github.com/morphodao/morpho-token.git"
   },
   "keywords": [
     "defi",
@@ -22,9 +22,9 @@
   "author": "Merlin Egalite",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/morpho-labs/morpho-token/issues"
+    "url": "https://github.com/morphodao/morpho-token/issues"
   },
-  "homepage": "https://github.com/morpho-labs/morpho-token#readme",
+  "homepage": "https://github.com/morphodao/morpho-token#readme",
   "dependencies": {
     "prettier": "2.6.2",
     "prettier-plugin-solidity": "1.0.0-beta.19"
