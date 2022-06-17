@@ -1,24 +1,25 @@
 # Morpho Token
 
-Morpho token contract based on the [semitransferable token](https://github.com/mangrovedao/semitransferable-token) build by Mangrove DAO. Please, refer to the later repository to learn more about the functionalities of the semitransferable token.
+The Morpho Token contract inherits the semi-transferable token pattern built by [@adhusson](https://github.com/adhusson), a contributor of the Morpho DAO and a core contributor at Mangrove DAO. Please, refer to the [semi-transferable repository](https://github.com/mangrovedao/semitransferable-token) to learn more about its functionalities and specificities.
 
-## Morpho token's life stages
+## Morpho token’s lifecycle
 
-The Morpho token's life can be splitted into 3 main stages described below.
-Note that token holders can burn their own tokens at any stage.
+The Morpho token’s lifecycle can be split into three main stages. Note that token holders can burn their tokens at any stage.
 
 ### 1. Token deployment and minting
 
-At deployment, 1B tokens will be minted by the owner (the Morpho DAO).
-The token is non-transferable by default.
-
+At deployment, 1 billion tokens are minted by the owner: the Morpho DAO. At this point, the token is non-transferable by default.
 ### 2. Transferability whitelisting
 
-Some contracts will be allowed to transfer tokens. These whitelisted contracts are most likely those handling Morpho's rewards like the `RewardsDistributor` and the `IncentivesVault`.
+The DAO can decide on contracts that will be allowed to transfer tokens. For example, these allowed contracts could be handling Morpho token distributions like in the `RewardsDistributor` and the `IncentivesVault` directly built in the [morpho-core-v1](https://github.com/morphodao/morpho-core-v1) repository.
 
 ### 3. Fully transferable
 
-At one point, the Morpho DAO will allow anyone to freely transfer their tokens.
+The Morpho DAO can then decide to allow anyone to transfer their tokens freely by setting:
+```solidity
+token.setPublicCapability(Token.transfer.selector, true);
+token.setPublicCapability(Token.transferFrom.selector, true);
+```
 
 ## Setup
 
