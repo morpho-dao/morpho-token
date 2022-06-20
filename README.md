@@ -33,3 +33,7 @@ Tests can be run using:
 ```bash
 forge test
 ```
+
+## Audits
+
+The [semi-transferable repository](https://github.com/mangrovedao/semitransferable-token) has been audited by Omniscia. The audit report can be found [here](https://omniscia.io/morpho-specialized-token/).
