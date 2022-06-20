@@ -12,6 +12,6 @@ contract MorphoToken is Token {
     /// @notice Constructs Morpho token contract.
     /// @param _owner The address of the owner (Morpho DAO).
     constructor(address _owner) Token("Morpho Token", "MORPHO", 18, _owner) {
-        _mint(_owner, 1e9 ether); // Mint 10B of Morpho tokens.
+        _mint(_owner, 1e9 ether); // Mint 1B of Morpho tokens.
     }
 }
