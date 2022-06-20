@@ -1,2 +1,0 @@
-@mangrovedao/semitransferable-token/=lib/mangrovedao/semitransferable-token/src/
-forge-std/=lib/forge-std/src/

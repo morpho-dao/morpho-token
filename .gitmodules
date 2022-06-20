@@ -1,6 +1,0 @@
-[submodule "lib/mangrovedao/semitransferable-token"]
-	path = lib/mangrovedao/semitransferable-token
-	url = https://github.com/mangrovedao/semitransferable-token
-[submodule "lib/forge-std"]
-	path = lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
