@@ -11,7 +11,7 @@ import "forge-std/console2.sol";
 contract TestMorphoToken is Test {
     MorphoToken public morphoToken;
 
-    uint256 public constant TOTAL_SUPPLY = 1e9 ether;
+    uint256 public constant TOTAL_SUPPLY = 0.2e9 ether;
     uint256 public constant AMOUNT = 1e3 ether;
     uint8 public constant TRANSFER_ROLE = 0;
     uint8 public constant MINT_ROLE = 1;

@@ -10,8 +10,11 @@ import "@semitransferable-token/Token.sol";
 contract MorphoToken is Token {
 
     /// @notice Constructs Morpho token contract.
-    /// @param _owner The address of the owner (Morpho DAO).
+    /// @param _owner The address of the owner (Morpho Association -> Morpho DAO).
     constructor(address _owner) Token("Morpho Token", "MORPHO", 18, _owner) {
-        _mint(_owner, 1e9 ether); // Mint 1B of Morpho tokens.
+        // Before transfering ownership to the DAO, the Morpho Association (ADMO) mints 0.2B of Morpho tokens.
+        // Those tokens are to be kept by the association or distributed to contributors and investors.
+        // The 0.8B Morpho tokens left can be minted by the DAO once it has ownership.
+        _mint(_owner, 0.2e9 ether);
     }
 }
