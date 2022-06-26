@@ -13,7 +13,7 @@ The Morpho token’s lifecycle can be split into three main stages. Note that to
 
 ### 1. Token deployment and minting
 
-At deployment, 1 billion tokens are minted by the owner: the Morpho DAO. At this point, the token is non-transferable by default.
+The Morpho Association (ADMO) has deployed the Morpho Token and minted 200 million tokens. It then transfered the ownership of the Token Contract to the Morpho DAO, which minted 800 million tokens. At this point, the token is non-transferable by default.
 
 ### 2. Transferability whitelisting
 
