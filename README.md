@@ -41,4 +41,4 @@ forge test
 
 ## Audits
 
-The [semi-transferable repository](https://github.com/mangrovedao/semitransferable-token) has been audited by Omniscia. The audit report can be found [here](https://omniscia.io/morpho-specialized-token/).
+The [semi-transferable repository](https://github.com/mangrovedao/semitransferable-token) has been audited by Omniscia. The audit report can be found [here](https://omniscia.io/morpho-specialized-token/) or in this file [Morpho_Omniscia](./audits/Morpho_Omniscia.pdf).
