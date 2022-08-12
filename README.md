@@ -5,7 +5,7 @@
   <img alt="" src="https://i.imgur.com/ZiL1Lr2.png">
 </picture>
 
-The Morpho Token contract inherits the semi-transferable token pattern built by [@adhusson](https://github.com/adhusson), a contributor of the Morpho DAO and a core contributor at Mangrove DAO. Please, refer to the [semi-transferable repository](https://github.com/mangrovedao/semitransferable-token) to learn more about its functionalities and specificities.
+The Morpho Token contract inherits the semi-transferable token pattern built by [@adhusson](https://github.com/adhusson), a contributor of Morpho DAO and a core contributor of Mangrove DAO. Please, refer to the [semi-transferable repository](https://github.com/morpho-dao/semitransferable-token) to learn more about its functionalities and specificities.
 
 ## Morpho token’s lifecycle
 
