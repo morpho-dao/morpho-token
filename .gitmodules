@@ -1,6 +1,6 @@
 [submodule "lib/semitransferable-token"]
 	path = lib/semitransferable-token
-	url = https://github.com/morpho-labs/semitransferable-token
+	url = https://github.com/morpho-dao/semitransferable-token
 [submodule "lib/forge-std"]
 	path = lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
