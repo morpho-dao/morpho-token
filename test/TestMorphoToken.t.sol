@@ -53,7 +53,7 @@ contract TestMorphoToken is Test {
         assertEq(morphoToken.balanceOf($this), _amount / 2 + (_amount % 2));
     }
 
-    // At stage 1, morpho token will ne be non transferable.
+    // At stage 1, morpho token will not be non-transferable.
     function testNonTransferable(uint256 _amount) public {
         vm.assume(_amount <= TOTAL_SUPPLY);
         // vm.assume(_amount > 1);
