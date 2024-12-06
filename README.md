@@ -1,9 +1,7 @@
-# Morpho Token
+# Legacy Morpho Token
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/uLq5V14.png">
-  <img alt="" src="https://i.imgur.com/ZiL1Lr2.png">
-</picture>
+> [!IMPORTANT]
+> This token is now deprecated. The Morpho Token has been redeployed with new features allowing onchain governance (see https://github.com/morpho-org/morpho-token).
 
 The Morpho Token contract inherits the semi-transferable token pattern built by [@adhusson](https://github.com/adhusson), a contributor of Morpho DAO and a core contributor of Mangrove DAO. Please, refer to the [semi-transferable repository](https://github.com/morpho-dao/semitransferable-token) to learn more about its functionalities and specificities.
 
