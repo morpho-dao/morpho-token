@@ -2,6 +2,10 @@
 
 > [!IMPORTANT]
 > This token is now deprecated. The Morpho Token has been redeployed with new features allowing onchain governance (see https://github.com/morpho-org/morpho-token).
+> 
+> Holders of the legacy token can wrap it for the new one (more information in [the docs](https://docs.morpho.org/governance/morpho-token/overview/#legacy-and-wrapped-morpho)). The legacy token will stay non-transferable forever to avoid mistakes. 
+
+
 
 The Morpho Token contract inherits the semi-transferable token pattern built by [@adhusson](https://github.com/adhusson), a contributor of Morpho DAO and a core contributor of Mangrove DAO. Please, refer to the [semi-transferable repository](https://github.com/morpho-dao/semitransferable-token) to learn more about its functionalities and specificities.
 
